@@ -6,10 +6,10 @@ import (
 )
 
 type Pagination struct {
-	Page             int    `json:"page" form:"page"`
+	Page             int    `json:"page" form:"page" binding:"required"`
 	NumberOfPages    int    `json:"numberOfPages"`
 	PaginationString string `json:"paginationString"`
-	MaxPageSize      int    `json:"maxPageSize" form:"maxPageSize"`
+	MaxPageSize      int    `json:"maxPageSize" form:"maxPageSize" binding:"required"`
 	TotalElements    int    `json:"totalElements"`
 }
 

@@ -1,7 +1,7 @@
 @BASE_URL=http://localhost:8080/newsletter
 
 ###
-GET {{BASE_URL}}/subscriptions?page=1&maxPageSize=1 HTTP/1.1
+GET {{BASE_URL}}/subscriptions?page=1&maxPageSize=5 HTTP/1.1
 
 ###
 POST {{BASE_URL}}/subscriptions HTTP/1.1
@@ -16,4 +16,7 @@ content-type: application/json
 }
 
 ###
-GET {{BASE_URL}}/subscriptions?page=2&maxPageSize=5 HTTP/1.1
+GET {{BASE_URL}}/subscriptions?page=1&maxPageSize=5 HTTP/1.1
+
+###
+GET {{BASE_URL}}/subscriptions HTTP/1.1
